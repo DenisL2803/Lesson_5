@@ -1,0 +1,325 @@
+
+
+
+/* ----------------CSS-властивості шрифтів-------------- */
+
+
+
+/* Встановлює родину шрифту */
+/* font-family: "Імя шрифту", "Імя шрифту", тип шрифту; 
+успадковується
+
+Типи шрифтів
+serif- шрифт з зарубками (засічками)
+sans-serif- рублений (без зарубок)
+cursive- курсивні шрифти
+fantast- декоративні
+monospace- моноширинні
+*/
+
+/*  
+Встановлює розмір шрифту
+font-size: цифрове значення одиниця виміру;
+успадковується
+*/
+
+/* 
+Встановлює стиль шрифту
+font-style: назва стилю 
+normal (за замовчуванням) - звичайний (не змінений) стиль
+italic- курсив
+oblique- нахилення літер
+*/
+/* .title{ 
+	font-style: italic;
+}
+*/
+/* 
+Встановлює насиченість (товщину) шрифту
+font-weight- цифрове значення або значення словом 
+*/
+/*  
+100 - thin
+300 - lite
+400 - Regular (normal) (за замовчуванням)
+500 - medium
+600 - semibold
+700 - bold
+900 - black
+*/
+
+
+
+/*-------------- CSS-властивості тексту ---------------*/
+
+/* 
+Встановлює колір тексту
+color: слово або код кольору;
+успадковується
+*/
+
+/* Встановлює вирівнювання тексту 
+text-align: значення:
+успадковується (текстом)
+
+center - вирівнює по центру
+left - вирівнює по лівому краю
+right - вирівнює по правому краю
+justify - вирівнює текст по ширині обєкту в якому він знаходиться автоматично змінюючи пробіли між словами
+*/
+
+/* 
+Додає тексту певне оформлення
+text-decoration: значення;
+line-through - закреслює текст
+overline - лінія над текстом
+underline - лінія під текстом
+none - (за замовченням) відмінює змінний раніше параметр
+*/
+
+/* 
+Додає тексту тінь
+text-shadow: горизонтальне_зміщення вертикальне_зміщення розмір колір;
+успадковується (текстом)
+*/
+/* 
+.text{
+	text-shadow: 1px 1px 5px red;
+}
+*/
+
+/*
+Встановлює тип (регістр) літер (прописні або заглавні)
+ text-transform: значення;
+ успадковується (текстом)
+ capitalize - кожна літера починається з заглавної літери
+ lowercase - усі літери прописні (нижній регістр)
+ uppercase - усі літери заглавні (верхній регістр)
+ none - (за замовчуванням) не змінює (або відмініє) значення
+ */
+
+ /* 
+ Визначає міжрядковий інтервал (відстань) (висота рядка)
+ line-height: значення;
+ успадковується (текстом)
+ */
+
+ /* 
+ Червона строка. Встановлює відступ зліва у першого рядка тексту 
+ text-indent: значення;
+ успадковується (текстом)
+ */
+
+ /* 
+ Встановлює інтервал між літерами (символами)
+ letter-spacing: значення;
+ успадковується (текстом)
+
+ .title {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+ }
+*/
+
+ /* 
+ управляє поведінкою пробілів між словами
+ white-space: значення;
+ normal - (за замовчунням) не змінює (або відмініє) значення
+ успадковується (текстом)
+ 
+ .text {
+	white-space: nowrap;
+ }
+ */
+
+ /* 
+ Встановлює інтервал між словами
+ word-spacing: значення;
+ успадковується (текстом)
+ 
+ .text {
+	word-spacing: 20px;
+ }
+ */
+
+ /* ================================================================================= */
+ /* ----------------------------- CSS-властивості блоків ---------------------------- */
+ /* ================================================================================= */
+
+/* 
+ box-sizing
+ Застосовується для зміни алгоритму обчислення величин
+ content-box - (за замовченням) додає відступи до розміру обєкту
+ border-box - значення розмірів враховують відступи
+ */
+/*  
+.block {
+	background-color: #77608d;
+}
+.inline {
+	background-color: #7a956b;
+}
+
+ /* Відступи */
+
+ /* 
+ padding - Внутрішній відступи 
+ Відступи ВСЕРЕДЕНІ обєкту.
+ Від кордонів обєкту ДО ЙОГО КОНТЕНТУ
+ НЕ успадковується
+
+ padding: з_усіх_сторін;
+ padding: зверху_знизу зправа_зліва;
+ padding: зверху зправа_зліва знизу
+ padding: зверху зправа знизу зліва
+
+ padding-top: значення;
+ padding-right: значення;
+ padding-bottom: значення;
+ padding-left: значення;
+
+ При вказанні значення у відсотках
+ відсоток береться від ширини батьківського обєкту,
+ навіть для горизонтальних відступів
+
+ .block {
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+
+	 padding: 20px 10px;
+ }
+ */
+
+ /* 
+ margin - Зовнішній відступ
+ Відступи ЗОВНІ обєкту
+ 
+ margin: з_усіх_сторін;
+ margin: зверху_знизу зправа_зліва;
+ margin: зверху зправа_зліва знизу
+ margin: зверху зправа знизу зліва
+
+ margin-top: значення;
+ margin-right: значення;
+ margin-bottom: значення;
+ margin-left: значення;
+
+ Значення можуть бути відємними!
+ */
+
+ /* 
+ width - чітко задає ширину блочного (блочно-рядкового) обєкту
+ НЕ працює зі рядковими обєктами
+ width: значення;
+ auto - (за замовченням) автоматичний розмір
+
+ .block {
+	padding: 10px;
+	width: 200px;
+ }
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+ h1{
+	font-family: "Roboto";
+	font-size: 50px;
+	letter-spacing: 0.15em;
+	text-align: center;
+ }
+ .title p{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 10px;
+	text-shadow: 1px 1px 1px yellow;
+	text-align: center;
+ }
+ 
+ img{
+	height: 500px;
+	padding: 15px 250px;
+ }
+
+ .text p{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 80px;
+	text-shadow: 1px 1px 1px yellow;
+	text-align: center;
+ }
+
+ .geopraphy p{
+	padding: 10px 20px 30px 80px;
+	text-shadow: 1px 1px 1px yellow;
+	font-family: "Roboto";
+ }
+
+ .geopraphy h1{
+	text-shadow: 8px 1px 10px blue;
+ }
+
+ .text2 p{
+	font-family: "Roboto";
+ }
+
+ .img2 img{
+	padding: 15px 350px;
+	width: 100%;
+ }
+ .hydrography li{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 80px;
+	text-shadow: 1px 1px 1px yellow;
+ }
+
+.hydrography p{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 80px;
+	text-shadow: 11px 5px 20px;
+}
+
+ .Ecology p{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 80px;
+	text-shadow: 1px 1px 1px yellow;
+ }
+ .Climate p{
+	font-family: "Roboto";
+	text-shadow: 1px 1px 1px yellow;
+ }
+ .History p{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 80px;
+	text-shadow: 1px 1px 1px yellow;
+ }
+.newhour p{
+	font-family: "Roboto";
+	padding: 10px 20px 30px 80px;
+	text-shadow: 1px 1px 1px yellow;
+}
+.earlynewhour p{
+	font-family: "Roboto";
+	margin-top: 2.5%;
+	text-shadow: 1px 1px 1px yellow;
+}
+.newhour a{
+	padding: 10px 20px 30px 40px;
+	color: red;
+}
+
+.newhour img{
+	height: 300px;
+	padding: 10px 20px 30px 40px;
+}
+
+h1{
+	text-shadow: 8px 1px 10px blue;
+}
+.top{
+	color: red;
+	padding: 10px 20px 20px;
+	font-size: 30px;
+}
+.text2 p{
+	text-shadow: 11px 5px 20px blue;
+}
